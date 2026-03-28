@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSF TECH | Premium IT Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', /* Blue 900 */
+                        secondary: '#f8fafc', /* Slate 50 */
+                        accent: '#b45309', /* Amber 700 */
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        logo: ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-secondary text-gray-800 font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-40 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <span class="font-logo font-extrabold text-3xl tracking-tight text-primary cursor-pointer" onclick="window.scrollTo(0,0)">FSF<span class="text-accent">TECH</span></span>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8 font-semibold text-sm">
+                        <a href="#about" class="text-gray-600 hover:text-primary transition">Why Us</a>
+                        <a href="#services" class="text-gray-600 hover:text-primary transition">Services & Pricing</a>
+                        <a href="#portfolio" class="text-gray-600 hover:text-primary transition">Showcase</a>
+                        <a href="#contact" class="bg-primary hover:bg-blue-800 text-white px-6 py-2.5 rounded-full shadow-lg shadow-blue-900/20 transition-all transform hover:-translate-y-0.5">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-4 text-center relative overflow-hidden bg-gradient-to-b from-blue-50 to-secondary">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style="animation-delay: 2s;"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto animate-on-scroll">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-gray-900 leading-tight">
+                Automate & Scale with <br><span class="text-primary">FSF</span> <span class="text-accent">TECH</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto font-light">
+                Membangun ekosistem digital premium. Dari Website Bisnis Internasional, Otomatisasi WhatsApp Cerdas, hingga Discord Server Profesional.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-primary hover:bg-blue-800 text-white font-bold py-3.5 px-8 rounded-full transition shadow-xl shadow-blue-900/30 transform hover:-translate-y-1">Mulai Konsultasi</a>
+                <a href="#portfolio" class="bg-white hover:bg-gray-50 text-gray-800 border border-gray-200 font-bold py-3.5 px-8 rounded-full transition shadow-md transform hover:-translate-y-1">Lihat Showcase</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Why Choose FSF TECH?</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Kami tidak sekadar menulis baris kode, kami merancang aset digital yang bekerja 24/7 untuk kemajuan bisnis Anda.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-8 bg-secondary rounded-2xl border border-gray-100 shadow-sm animate-on-scroll hover:shadow-md transition">
+                    <div class="text-4xl font-extrabold text-primary mb-2">50+</div>
+                    <div class="text-gray-600 font-medium">Projects Completed</div>
+                </div>
+                <div class="p-8 bg-secondary rounded-2xl border border-gray-100 shadow-sm animate-on-scroll delay-100 hover:shadow-md transition">
+                    <div class="text-4xl font-extrabold text-accent mb-2">99%</div>
+                    <div class="text-gray-600 font-medium">Server Uptime</div>
+                </div>
+                <div class="p-8 bg-secondary rounded-2xl border border-gray-100 shadow-sm animate-on-scroll delay-200 hover:shadow-md transition">
+                    <div class="text-4xl font-extrabold text-primary mb-2">20M+</div>
+                    <div class="text-gray-600 font-medium">Message Processed</div>
+                </div>
+                <div class="p-8 bg-secondary rounded-2xl border border-gray-100 shadow-sm animate-on-scroll delay-300 hover:shadow-md transition">
+                    <div class="text-4xl font-extrabold text-accent mb-2">50+</div>
+                    <div class="text-gray-600 font-medium">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 animate-on-scroll">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Layanan & Harga</h2>
+                    <p class="text-gray-500">Pilih solusi cerdas yang tepat untuk skala bisnis Anda.</p>
+                </div>
+                <div class="bg-white p-1 rounded-lg border border-gray-200 shadow-sm mt-4 md:mt-0">
+                    <select id="currencySelector" class="bg-transparent text-gray-700 outline-none p-2 cursor-pointer font-semibold" onchange="updatePricing()">
+                        <option value="IDR">🇮🇩 IDR (Rupiah)</option>
+                        <option value="USD">🇺🇸 USD (Dollar)</option>
+                        <option value="EUR">🇪🇺 EUR (Euro)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-3 md:col-span-2 bg-white p-8 md:p-10 rounded-3xl border-2 border-accent relative shadow-2xl shadow-accent/10 animate-on-scroll transform hover:-translate-y-1 transition duration-300 flex flex-col md:flex-row items-center gap-8">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-2 rounded-bl-xl rounded-tr-2xl">GLOBAL VIP</div>
+                    
+                    <div class="w-24 h-24 bg-amber-50 rounded-2xl flex items-center justify-center text-accent text-4xl flex-shrink-0 shadow-inner">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    
+                    <div class="flex-grow text-center md:text-left">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-2 text-gray-900">Go International Web</h3>
+                        <p class="text-gray-600 mb-4 max-w-2xl">Ekspansi bisnis ke pasar global. Membutuhkan *insight meeting* untuk penyesuaian kriteria ketat, fitur kustom, dan lokalisasi multi-bahasa sesuai standar internasional.</p>
+                        <ul class="text-sm text-gray-600 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> G-Meet Preparation</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> Architecture Insight</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-2"></i> Global Market Ready</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-shrink-0 w-full md:w-auto mt-6 md:mt-0">
+                        <div class="text-xl md:text-2xl font-extrabold text-accent mb-3 text-center md:text-right">Custom Pricing</div>
+                        <button onclick="openModal()" class="w-full text-center bg-accent hover:bg-amber-800 text-white py-4 px-8 rounded-xl transition font-bold shadow-lg shadow-amber-900/20 transform hover:scale-[1.02]">
+                            <i class="fas fa-calendar-alt mr-2"></i> Jadwalkan Meeting
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-blue-200 animate-on-scroll delay-100 flex flex-col">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-primary text-2xl mb-6"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Website for Business</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Company profile & sistem manajemen terintegrasi dengan desain modern.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Rp 1.500.000" data-usd="$100" data-eur="€90">Rp 1.500.000</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> UI/UX Profesional</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Animasi Halus & Responsif</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-green-200 animate-on-scroll delay-200 flex flex-col">
+                    <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-600 text-2xl mb-6"><i class="fab fa-whatsapp"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">WhatsApp E-Commerce</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Bot WhatsApp cerdas untuk automasi kasir, katalog produk, dan notifikasi otomatis.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Rp 850.000" data-usd="$60" data-eur="€55">Rp 850.000</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Keranjang & Checkout QRIS</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Multi-Emblem & Auto Responder</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-indigo-200 animate-on-scroll flex flex-col">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-500 text-2xl mb-6"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Discord Server Design</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Membangun arsitektur server Discord dari nol. Channel estetik, permission rapi, dan onboarding member.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Rp 250.000" data-usd="$18" data-eur="€16">Rp 250.000</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Estetika & Kategori Channel</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Setup Role & Permissions Setup</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-purple-200 animate-on-scroll delay-100 flex flex-col">
+                    <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 text-2xl mb-6"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Custom Discord Bot</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Bot eksklusif khusus server Anda. Mengurus tiket, akuntansi, leveling, dan moderasi otomatis.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Rp 450.000" data-usd="$30" data-eur="€28">Rp 450.000</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Python & SQLite Database</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Sistem Tiket & Moderasi</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-blue-300 animate-on-scroll delay-200 flex flex-col">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-500 text-2xl mb-6"><i class="fab fa-telegram-plane"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Telegram Bot</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Automasi grup, pengumpulan data (scraping), dan integrasi notifikasi sistem via API Webhook.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Rp 500.000" data-usd="$35" data-eur="€32">Rp 500.000</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Group Management</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> API Integrasi Pihak Ketiga</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:border-gray-300 animate-on-scroll lg:col-start-2 flex flex-col">
+                    <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center text-gray-700 text-2xl mb-6"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Maintenance & Server</h3>
+                    <p class="text-sm text-gray-600 mb-6 flex-grow">Pemeliharaan server bulanan, perbaikan bug, integrasi fitur baru, dan optimasi database.</p>
+                    <div class="text-2xl font-extrabold text-primary mb-4 price-tag" data-idr="Mulai Rp 300K" data-usd="From $20" data-eur="From €18">Mulai Rp 300K</div>
+                    <ul class="text-sm text-gray-600 space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> 24/7 Monitoring & Uptime</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Database Backup Berkala</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 animate-on-scroll">Project Showcase</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-secondary rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition duration-300 group animate-on-scroll">
+                    <div class="overflow-hidden h-56 relative">
+                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=800" alt="Discord Bot" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8 relative bg-white h-full">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-primary transition">Community Manager Discord</h3>
+                        <p class="text-gray-500 text-sm mb-6">Sistem akuntansi, tiket, dan manajer server yang mengelola ribuan anggota aktif.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-full border border-blue-100"><i class="fab fa-python mr-1"></i>Python</span>
+                            <span class="px-3 py-1 text-xs font-semibold bg-gray-50 text-gray-700 rounded-full border border-gray-200"><i class="fas fa-database mr-1"></i>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition duration-300 group animate-on-scroll delay-100">
+                    <div class="overflow-hidden h-56 relative">
+                        <div class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Business Web" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8 relative bg-white h-full">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-accent transition">Corporate Dashboard Web</h3>
+                        <p class="text-gray-500 text-sm mb-6">Website bisnis tingkat lanjut dengan animasi mulus dan panel administrasi yang elegan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-semibold bg-teal-50 text-teal-700 rounded-full border border-teal-100">Tailwind</span>
+                            <span class="px-3 py-1 text-xs font-semibold bg-red-50 text-red-600 rounded-full border border-red-100">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition duration-300 group animate-on-scroll delay-200">
+                    <div class="overflow-hidden h-56 relative">
+                        <div class="absolute inset-0 bg-green-500/10 group-hover:bg-transparent transition z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=800" alt="WhatsApp Bot" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8 relative bg-white h-full">
+                        <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-green-600 transition">WhatsApp E-Commerce Auto</h3>
+                        <p class="text-gray-500 text-sm mb-6">Sistem kasir otomatis via WhatsApp, mengatur pesanan dan mengirim tagihan QRIS instan.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-semibold bg-green-50 text-green-700 rounded-full border border-green-200"><i class="fab fa-whatsapp mr-1"></i>Baileys</span>
+                            <span class="px-3 py-1 text-xs font-semibold bg-blue-50 text-blue-600 rounded-full border border-blue-100"><i class="fab fa-node-js mr-1"></i>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-secondary overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12 animate-on-scroll">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What Clients Say</h2>
+                    <p class="text-gray-500 mt-2">Kepuasan mereka adalah bukti komitmen kami.</p>
+                </div>
+                <div class="flex gap-3">
+                    <button onclick="scrollTestimonials(-350)" class="w-12 h-12 rounded-full bg-white shadow border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"><i class="fas fa-arrow-left"></i></button>
+                    <button onclick="scrollTestimonials(350)" class="w-12 h-12 rounded-full bg-white shadow border border-gray-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div id="testimonialSlider" class="flex overflow-x-auto gap-6 snap-x snap-mandatory no-scrollbar pb-8 animate-on-scroll delay-100">
+                <div class="min-w-[320px] md:min-w-[420px] snap-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-primary">AD</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Alex D.</h4>
+                                <p class="text-xs text-gray-500 font-medium">Owner Roleplay Server</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-accent bg-amber-50 px-2.5 py-1 rounded-md text-sm font-bold border border-amber-100">
+                            <i class="fas fa-star mr-1"></i> 5.0
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"Bot Discord custom dari FSF TECH bener-bener ngebantu ngatur ribuan member. Sistem tiket dan akuntansinya sangat presisi."</p>
+                </div>
+
+                <div class="min-w-[320px] md:min-w-[420px] snap-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center font-bold text-green-700">SM</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Sarah M.</h4>
+                                <p class="text-xs text-gray-500 font-medium">F&B Manager</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-accent bg-amber-50 px-2.5 py-1 rounded-md text-sm font-bold border border-amber-100">
+                            <i class="fas fa-star mr-1"></i> 4.9
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"Website bisnis untuk usaha kami beroperasi sangat cepat. Desainnya premium dan integrasi dengan WhatsApp sangat lancar."</p>
+                </div>
+                
+                <div class="min-w-[320px] md:min-w-[420px] snap-center bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center font-bold text-white">BS</div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Budi Setiawan</h4>
+                                <p class="text-xs text-gray-500 font-medium">Store Owner</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-accent bg-amber-50 px-2.5 py-1 rounded-md text-sm font-bold border border-amber-100">
+                            <i class="fas fa-star mr-1"></i> 5.0
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"Gila sih layanannya. 20 juta message beneran bisa di-handle tanpa down. Solusi IT dan maintenance terbaik."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white relative overflow-hidden border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900 tracking-tight">Mulai Projek Anda Sekarang</h2>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">Pilih platform kenyamanan Anda untuk berkonsultasi secara gratis atau langsung memesan layanan kami.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <a href="https://wa.me/6281234567890" target="_blank" class="group relative bg-white rounded-3xl p-8 border border-gray-100 shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-on-scroll">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-gradient-to-br from-green-400/20 to-emerald-500/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="flex items-center gap-6 relative z-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-lg shadow-green-500/30 group-hover:animate-pulse">
+                            <i class="fab fa-whatsapp text-4xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">WhatsApp Fast Response</h3>
+                            <p class="text-gray-500 text-sm">Konsultasi cepat, tanya harga, atau langsung pesan produk e-commerce & bot.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center text-green-600 font-bold group-hover:translate-x-2 transition-transform">
+                        Chat Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+
+                <a href="https://dcd.gg/fsf-shop" target="_blank" class="group relative bg-white rounded-3xl p-8 border border-gray-100 shadow-xl hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 animate-on-scroll delay-100">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-gradient-to-br from-[#5865F2]/20 to-indigo-500/5 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="flex items-center gap-6 relative z-10">
+                        <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#5865F2] to-[#4752C4] flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:animate-pulse">
+                            <i class="fab fa-discord text-4xl text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-1">Discord Community & Meet</h3>
+                            <p class="text-gray-500 text-sm">Join server kami, buat tiket untuk konsultasi layar (screen-share), dan meeting mendalam.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center text-[#5865F2] font-bold group-hover:translate-x-2 transition-transform">
+                        Join Server <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-10 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <p>&copy; 2026 FSF TECH. All rights reserved. | <a href="mailto:fikri.support.center@gmail.com" class="hover:text-white transition">fikri.support.center@gmail.com</a></p>
+    </footer>
+
+    <div id="bookingModal" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="absolute inset-0 bg-gray-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="bg-white w-full max-w-lg mx-4 rounded-3xl shadow-2xl relative z-10 transform scale-95 transition-transform duration-300" id="modalContent">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-gray-800 bg-gray-100 hover:bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center transition">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="p-8">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center text-accent text-2xl mx-auto mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Jadwalkan G-Meet</h3>
+                    <p class="text-sm text-gray-500 mt-2">Pilih waktu untuk membahas arsitektur Go International Anda. Kami akan mengirimkan link Google Meet ke email Anda.</p>
+                </div>
+
+                <form action="https://formsubmit.co/fikri.support.center@gmail.com" method="POST" class="space-y-4">
+                    <input type="hidden" name="_subject" value="Jadwal Meeting Baru - Go International">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap / Instansi</label>
+                        <input type="text" name="Nama" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-accent focus:border-transparent transition outline-none" placeholder="Cth: Budi (PT FSF)">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Email Anda (Untuk Link G-Meet)</label>
+                        <input type="email" name="Email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-accent focus:border-transparent transition outline-none" placeholder="emailanda@gmail.com">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Pilih Tanggal</label>
+                            <input type="date" name="Tanggal" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-accent focus:border-transparent transition outline-none text-gray-600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Pilih Jam</label>
+                            <input type="time" name="Jam" required class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-accent focus:border-transparent transition outline-none text-gray-600">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Deskripsi Singkat Project (Opsional)</label>
+                        <textarea name="Pesan" rows="2" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-accent focus:border-transparent transition outline-none resize-none" placeholder="Tuliskan ide atau kriteria Anda..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-3.5 rounded-xl transition shadow-lg shadow-blue-900/20 transform hover:-translate-y-1 mt-4">
+                        <i class="fas fa-paper-plane mr-2"></i> Kirim Jadwal
+                    </button>
+                    <p class="text-xs text-center text-gray-400 mt-3">*Detail akan dikirim ke fikri.support.center@gmail.com</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updatePricing() {
+            const currency = document.getElementById('currencySelector').value;
+            const priceTags = document.querySelectorAll('.price-tag');
+            priceTags.forEach(tag => {
+                if (currency === 'IDR') tag.innerText = tag.getAttribute('data-idr');
+                else if (currency === 'USD') tag.innerText = tag.getAttribute('data-usd');
+                else if (currency === 'EUR') tag.innerText = tag.getAttribute('data-eur');
+            });
+        }
+
+        function scrollTestimonials(offset) {
+            const slider = document.getElementById('testimonialSlider');
+            slider.scrollBy({ left: offset, behavior: 'smooth' });
+        }
+
+        const modal = document.getElementById('bookingModal');
+        const modalContent = document.getElementById('modalContent');
+
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md', 'bg-white/95');
+                nav.classList.remove('bg-white/90');
+            } else {
+                nav.classList.remove('shadow-md', 'bg-white/95');
+                nav.classList.add('bg-white/90');
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { root: null, rootMargin: "0px", threshold: 0.1 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
