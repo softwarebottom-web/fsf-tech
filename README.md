@@ -1,62 +1,61 @@
-# 🚀 M. FIKRI SURYA FIRDAUS
-### Full Stack & Website Developer | FSF Tech
-
 <p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=007BFF&height=200&section=header&text=FSF%20TECH&fontSize=70&animation=fadeIn&fontAlignY=38&secondaryColor=f5deb3" />
+  <img src="https://capsule-render.vercel.app/render?type=waving&color=007BFF&height=150&section=header&text=M.%20FIKRI%20SURYA%20FIRDAUS&fontSize=45&fontColor=ffffff&secondaryColor=f5deb3&animation=fadeIn" />
 </p>
 
-## 💫 Tentang Saya
-Halo! Saya **Fikri**, seorang pengembang web yang berfokus pada ekosistem JavaScript modern dan solusi backend yang efisien. Saya mengembangkan berbagai proyek mulai dari platform komunitas hingga sistem manajemen toko digital dengan standar keamanan tinggi.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=007BFF&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;Website+Specialist;Founder+of+FSF+TECH;Cyber+Security+Enthusiast" alt="Typing SVG" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 💫 Tentang Saya
+Halo! Saya **Fikri**, seorang pengembang web yang fokus pada ekosistem modern. Saya membangun sistem dari nol, mulai dari desain UI/UX yang detail hingga backend yang solid. Berbasis pada pengembangan Android (Termux) dan tools profesional lainnya.
 
-| Kategori | Teknologi |
+---
+
+## 🛠️ Tech Stack & Skill
+| Category | Tools & Framework |
 | :--- | :--- |
-| **Frontend** | React.js, Next.js, Tailwind CSS (Modern UI/UX) |
-| **Backend** | Node.js, FastAPI (Python), Supabase, Firebase |
-| **Database** | PostgreSQL, MongoDB |
-| **Mobile Dev** | Termux Environment, Android-based Development |
-| **Security** | Network Scanning (Nmap), Penetration Testing, OWASP Standards |
+| **Frontend** | React, Next.js, Tailwind CSS (Modern & Clean UI) |
+| **Backend** | Node.js, Python (FastAPI), Supabase, Firebase |
+| **Development** | Android Terminal (Termux), Git, Vercel |
+| **Specialty** | Bot Discord/Telegram/WA, Maintenance, Security |
 
 ---
 
 ## 📁 Proyek Unggulan
 
-### 🛒 FSF Shop (v2.0 Upgrade)
-Sistem toko digital dengan integrasi **Dynamic QRIS Payments** dan dashboard manajemen pekerja multi-role.
-* **Fitur:** Otomasi akuntansi, integrasi WhatsApp API, dan UI minimalis.
-* **Tech:** Next.js, Supabase, Tailwind.
+### 🛒 FSF Shop (v2.0)
+Upgrade sistem toko digital dengan **Dynamic QRIS Payments** dan dashboard manajemen pekerja.
+* **Fitur:** Auto-accounting, WhatsApp Integration.
 
 ### 🧪 ZaneLab & SentinelBot
-Backend sistem cerdas untuk otomatisasi tugas dan manajemen database komunitas.
+Backend cerdas untuk manajemen database komunitas dan otomatisasi tugas.
 * **Tech:** Python, FastAPI, Supabase.
 
-### ☕ Blacksmith Coffee Website
-Branding profil bisnis dengan konsep *Industrial-Chic* untuk katalog produk dan informasi operasional.
+### ☕ Blacksmith Coffee
+Website profil bisnis dengan konsep *Industrial-Chic* (Branding & Catalog).
 
 ---
 
 ## 📊 Statistik GitHub
-<p align="left">
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&count_private=true" alt="Fikri's Stats" height="150" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight" alt="Top Langs" height="150" />
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=softwarebottom-web&show_icons=true&theme=transparent&title_color=007BFF&icon_color=f5deb3&text_color=ffffff&border_color=007BFF" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=softwarebottom-web&layout=compact&theme=transparent&title_color=007BFF&text_color=ffffff&border_color=007BFF" width="44%" />
 </p>
 
 ---
 
-## 🌐 Hubungi Saya
-Untuk konsultasi proyek *Go International*, desain bot (Discord/Telegram/WhatsApp), atau maintenance sistem, silakan hubungi melalui:
+## 🌐 Layanan & Hubungi Saya
+> **Penting:** Untuk proyek *Go International*, diwajibkan untuk melakukan **Meet** terlebih dahulu karena harga akan menyesuaikan kriteria publikasi internasional.
 
-* **WhatsApp:** [Klik di Sini](https://wa.me/NOMOR_WHATSAPP_ANDA)
-* **Discord:** [Nama Discord Anda]
-* **Portfolio:** [Link Website FSF Tech]
+* **WhatsApp:** [Hubungi untuk Konsultasi (Fikri)](https://wa.me/6285607655532)
+* **Layanan:** Desain Bot (Discord/Telegram/WA), Maintenance Sistem, UI/UX Detail Berkelas.
 
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueW94bmZ6eG94bmZ6eG94bmZ6eG94bmZ6eG94bmZ6ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3o7TKMGpxxZ2ACA9vG/giphy.gif" width="50" />
+  <img src="https://raw.githubusercontent.com/Mayccoll/Mayccoll/master/asess/cat.gif" width="120" />
   <br>
   <i>"Code with logic, design with soul."</i>
 </p>
